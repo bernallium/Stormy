@@ -1,4 +1,4 @@
-package com.example.brandon.stormy;
+package com.example.brandon.stormy.weather;
 
 public class Day {
     private long mTime;

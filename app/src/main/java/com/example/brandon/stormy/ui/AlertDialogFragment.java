@@ -1,10 +1,12 @@
-package com.example.brandon.stormy;
+package com.example.brandon.stormy.ui;
 
 import android.app.AlertDialog;
 import android.app.Dialog;
 import android.app.DialogFragment;
 import android.content.Context;
 import android.os.Bundle;
+
+import com.example.brandon.stormy.R;
 
 public class AlertDialogFragment extends DialogFragment{
 

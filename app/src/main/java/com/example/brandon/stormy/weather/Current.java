@@ -1,6 +1,8 @@
 // This will be the model for the project
 
-package com.example.brandon.stormy;
+package com.example.brandon.stormy.weather;
+
+import com.example.brandon.stormy.R;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;

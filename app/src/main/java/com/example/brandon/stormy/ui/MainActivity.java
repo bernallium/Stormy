@@ -1,4 +1,4 @@
-package com.example.brandon.stormy;
+package com.example.brandon.stormy.ui;
 
 import android.content.Context;
 import android.graphics.drawable.Drawable;
@@ -12,6 +12,9 @@ import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.example.brandon.stormy.R;
+import com.example.brandon.stormy.weather.Current;
 
 import org.json.JSONException;
 import org.json.JSONObject;
