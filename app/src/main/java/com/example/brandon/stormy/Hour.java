@@ -1,6 +1,6 @@
 package com.example.brandon.stormy;
 
-public class HourlyWeather {
+public class Hour {
     public long getTime() {
         return mTime;
     }
