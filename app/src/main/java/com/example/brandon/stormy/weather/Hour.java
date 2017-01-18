@@ -1,6 +1,12 @@
 package com.example.brandon.stormy.weather;
 
 public class Hour {
+    private long mTime;
+    private String mSummary;
+    private double mTemperature;
+    private String mIcon;
+    private String mTimezone;
+
     public long getTime() {
         return mTime;
     }
@@ -40,12 +46,4 @@ public class Hour {
     public void setIcon(String icon) {
         mIcon = mIcon;
     }
-
-    private long mTime;
-    private String mSummary;
-    private double mTemperature;
-    private String mIcon;
-    private String mTimezone;
-
-
 }

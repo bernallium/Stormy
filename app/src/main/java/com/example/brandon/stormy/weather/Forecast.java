@@ -28,8 +28,4 @@ public class Forecast {
     public void setDailyForecast(Day[] dailyForecast) {
         mDailyForecast = dailyForecast;
     }
-
-
-
-
 }
