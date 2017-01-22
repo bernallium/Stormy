@@ -6,7 +6,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:animateLayoutChanges="true"
-                android:background="#FFFC970B"
+                android:background="@drawable/bg_gradient"
                 android:paddingLeft="@dimen/activity_horizontal_margin"
                 android:paddingRight="@dimen/activity_horizontal_margin"
                 android:paddingTop="@dimen/activity_vertical_margin"
@@ -163,6 +163,7 @@
             android:id="@+id/hourlyButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginRight="1dp"
             android:layout_weight="1"
             android:background="#40ffffff"
             android:text="Hourly"
@@ -172,11 +173,11 @@
             android:id="@+id/dailyButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="1dp"
             android:layout_weight="1"
             android:background="#40ffffff"
             android:text="DAILY"
             android:textColor="#ffffffff"/>
     </LinearLayout>
-</LinearLayout>
 
-    </RelativeLayout>
+</RelativeLayout>
