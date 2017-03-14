@@ -38,12 +38,13 @@ public class DayAdapter extends BaseAdapter {
     }
 
 
-
     @Override
-    public View getView(int position, View convertView, ViewGroup parent) {
+    public View getView(int position, View convertView, ViewGroup parent) { // getView is called to create the view for each item being adopted.
+        // int position matches the data object to the specific view in the list that is being displayed.
         Viewholder holder;
         /* View holders (a special helper class) allows you to re-use the same references to objects
-        in the view like text views and image views, for example. */
+        in the view like text views and image views, for example.
+        Allows re-using of views for smooth scrolling */
 
         if (convertView == null ) { // The first time getView is called, convertView is null.
             // It will be will be re-used with refreseshed daya on subsqeuent calls.
