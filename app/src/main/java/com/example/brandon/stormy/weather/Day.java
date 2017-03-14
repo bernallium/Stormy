@@ -1,5 +1,9 @@
 package com.example.brandon.stormy.weather;
 
+import android.icu.text.SimpleDateFormat;
+import android.icu.util.TimeZone;
+import android.text.style.ForegroundColorSpan;
+
 public class Day {
     private long mTime;
     private String mSummary;
@@ -23,8 +27,8 @@ public class Day {
         mSummary = mSummary;
     }
 
-    public double getTemperatureMax() {
-        return mTemperatureMax;
+    public int getTemperatureMax() {
+        return (int) Math.round(mTemperatureMax);
     }
 
     public void setmTemperatureMax(double temperatureMax) {
@@ -45,5 +49,16 @@ public class Day {
 
     public void setTimezone(String timezone) {
         mTimezone = mTimezone;
+    }
+
+    public int getIconId() {
+        return Forecast.getIconId(mIcon);
+    }
+
+    public String getDayOfTheWeek() {
+        SimpleDateFormat formatter = new SimpleDateFormat ("EEEE");
+        formatter.setTimeZone(TimeZone.getTimeZone(mTimezone));
+        Date dateTime = new Date (mTime * 1000);
+        return formatter.format(dateTime);
     }
 }
